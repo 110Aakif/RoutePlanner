@@ -25,12 +25,12 @@ This project calculates the shortest delivery route by evaluating all permutatio
 - Enables swapping between multiple strategies (e.g., Haversine, Euclidean, external APIs).
 
 ### 4. **HaversineCalculator**
-- Concrete implementation of `DistanceCalculator` using the Haversine formula for spherical distance.
+- Concrete implementation of `IDistanceCalculator` using the Haversine formula for spherical distance.
 
 ### 5. **RoutePlanner**
 - Core logic that:
   - Generates all valid permutations of pickup-drop sequences.
-  - Uses the injected `DistanceCalculator` to evaluate the total distance.
+  - Uses the injected `IDistanceCalculator` to evaluate the total distance.
   - Selects the most optimal route.
 - Designed to be **modular** and **testable**.
 
